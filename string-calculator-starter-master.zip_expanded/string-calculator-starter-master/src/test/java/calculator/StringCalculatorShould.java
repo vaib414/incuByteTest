@@ -33,4 +33,8 @@ class StringCalculatorShould {
 	    public final void whenAnyNumberOfNumbersIsUsedThenReturnValuesAreTheirSums() {
 	        assertEquals(3+6+15+18+46+33, stringCalculator.add("3,6,15,18,46,33"));
    }
+	 @Test
+	 public final void whenNewLineIsUsedBetweenNumbersThenReturnValuesAreTheirSums() {
+	     assertEquals(3+6+15, stringCalculator.add("3,6n15"));
+	 }
 }
